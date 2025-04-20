@@ -79,6 +79,7 @@ const ParentDashboard = () => {
     fetchAllData();
   }, [hallticketnumber]);
 
+
   //fees options
   const feesoptions = [
     { type: "Lab Fee" },
@@ -174,7 +175,7 @@ const ParentDashboard = () => {
           <div className="col-md-4">
             <div className="card bg-primary text-white">
               <div className="card-body text-center">
-                <h3>{attendance?.total || 0}</h3>
+                <h3>{attendance?.overall.total || 0}</h3>
                 <p className="mb-0">Total Classes</p>
               </div>
             </div>

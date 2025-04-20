@@ -12,7 +12,7 @@ import PrivateRoute from "./components/PrivateRoute";
 import DashboardLayout from "./components/DashboardLayout";
 import Header from "./components/Header";
 import FeedbackForm from "./components/feedbackform";
-
+import Notifications from "./components/Notifications";
 function App() {
   return (
     <Router>
@@ -37,8 +37,8 @@ function App() {
             <Route path="fees" element={<div><Header/><Fees /></div>} />
             <Route path="marks" element={<div><Header/><Marks /></div>} />
             <Route path="feedback" element={<div><Header/><FeedbackForm /></div>} />
-
-          </Route>
+            <Route path="notifications" element={<div><Header/><Notifications /></div>} />
+          </Route>  
         </Routes>
       </AuthProvider>
     </Router>
